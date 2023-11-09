@@ -18,3 +18,12 @@
 - **The Builder Pattern** is a good choice when designing classes
   whose constructors or static factories would have more than a handful of
   parameters, especially if many of the parameters are optional or of identical type.
+
+### _Item03_ - ENFORCE THE SINGLETON PROPERTY WITH A PRIVATE CONSTRUCTOR OR AN ENUM TYPE
+
+- A singleton is simply a class that is instantiated exactly once. 
+  - Singleton with public final field, the main advantage of this approach is that the API makes it clear that the class is a singleton: the public static field is final, so it will always contain the same object reference.
+  - Singleton with static factory also but eager initialization.
+  - Singleton with static factory with lazy initialization.
+  - Singleton with enum type, it is the best way to implement a singleton.
+
